@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+/*フォントの設定*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One', Sans-Serif;
+}
+
+/*全体の真ん中に持ってくる*/
+/*https://mamewaza.com/support/blog/howto-use-flex.html*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+/*ulを中心に持ってくる*/
+ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*active出ないときの要素*/
+ul li a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #dadada;
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/*activeのときの要素*/
+ul li a.active {
+    background-color: #00b5de;
+    color: #fff;
+}
